@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-Language Translator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🌐 Multi-Language Translator</h1>
+            <p class="subtitle">Translate English text to multiple languages</p>
+        </header>
+
+        <div class="translator-box">
+            <div class="input-section">
+                <div class="section-header">
+                    <h2>English Text</h2>
+                    <span class="word-count" id="wordCount">0 / 10,000 words</span>
+                </div>
+                <textarea 
+                    id="englishText" 
+                    placeholder="Enter your English text here (up to 10,000 words)..."
+                    maxlength="100000"
+                ></textarea>
+            </div>
+
+            <div class="controls">
+                <div class="language-selector">
+                    <label for="targetLanguage">Translate to:</label>
+                    <select id="targetLanguage">
+                        <option value="bn">Bengali (বাংলা)</option>
+                        <option value="hi">Hindi (हिन्दी)</option>
+                        <option value="es">Spanish (Español)</option>
+                        <option value="fr">French (Français)</option>
+                        <option value="de">German (Deutsch)</option>
+                        <option value="it">Italian (Italiano)</option>
+                        <option value="pt">Portuguese (Português)</option>
+                        <option value="ru">Russian (Русский)</option>
+                        <option value="ja">Japanese (日本語)</option>
+                        <option value="ko">Korean (한국어)</option>
+                        <option value="zh">Chinese (中文)</option>
+                        <option value="ar">Arabic (العربية)</option>
+                        <option value="tr">Turkish (Türkçe)</option>
+                        <option value="nl">Dutch (Nederlands)</option>
+                        <option value="pl">Polish (Polski)</option>
+                        <option value="th">Thai (ไทย)</option>
+                        <option value="vi">Vietnamese (Tiếng Việt)</option>
+                        <option value="id">Indonesian (Bahasa Indonesia)</option>
+                        <option value="ms">Malay (Bahasa Melayu)</option>
+                        <option value="ta">Tamil (தமிழ்)</option>
+                        <option value="te">Telugu (తెలుగు)</option>
+                        <option value="mr">Marathi (मराठी)</option>
+                        <option value="gu">Gujarati (ગુજરાતી)</option>
+                        <option value="kn">Kannada (ಕನ್ನಡ)</option>
+                        <option value="ml">Malayalam (മലയാളം)</option>
+                    </select>
+                </div>
+                <button id="translateBtn" class="translate-btn">
+                    <span>Translate</span>
+                    <span class="loading" id="loading" style="display: none;">Translating...</span>
+                </button>
+            </div>
+
+            <div class="output-section">
+                <div class="section-header">
+                    <h2>Translated Text</h2>
+                    <button id="copyBtn" class="copy-btn" title="Copy to clipboard">📋 Copy</button>
+                </div>
+                <textarea 
+                    id="translatedText" 
+                    placeholder="Translated text will appear here..."
+                    readonly
+                ></textarea>
+            </div>
+        </div>
+
+        <div class="info-box">
+            <p>💡 <strong>Note:</strong> This translator supports up to 10,000 words. For best results, ensure your text is clear and well-formatted.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
