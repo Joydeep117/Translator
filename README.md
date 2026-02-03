@@ -125,4 +125,6 @@ If you encounter any issues or have suggestions, please open an issue in the rep
 
 ---
 
-**Enjoy translating! 🌍✨**
+**Enjoy translating! 🌍✨**.........
+
+
